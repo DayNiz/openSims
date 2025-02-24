@@ -1,0 +1,5 @@
+(Tutorial Reference (based on Unity - to adappt for Godot): https://www.youtube.com/watch?v=gh5PNt6sD_M
+The Core concept of the Sims AI is based on SmartObjects (SmOb):
+Only a minimal set of information is stored in their script, all interraction are stored into SmOb.
+A sim want to satisfy his needs, and each SmOb "advertise" about one or more needs he could feel, and what actions should be done.
+He then choose a object nearby than could satisfy one of his urgent needs (not always the best choice because it add some fun to the gameplay...)

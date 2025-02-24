@@ -1,0 +1,24 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="OpenSims"
+config/tags=PackedStringArray("gpl_3", "sims")
+run/main_scene="res://game_master.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus")
+config/icon="res://icon.svg"
+
+[global_group]
+
+Hunger="SO advertising hunger"
+Fun="SO advertising Fun"
+Bladder="SO advertising Bladder"
+Energy="SO advertising Energy"

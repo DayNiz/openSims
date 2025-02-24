@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://ck8blt5nkh7in"]
+
+[ext_resource type="Script" path="res://sim.gd" id="1_4nv72"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r4ci2"]
+transparency = 3
+alpha_hash_scale = 1.0
+alpha_antialiasing_mode = 0
+albedo_color = Color(0.7, 0.329, 0.638167, 0.615686)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_w26xs"]
+material = SubResource("StandardMaterial3D_r4ci2")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_bacj3"]
+
+[node name="Sim" type="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+script = ExtResource("1_4nv72")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_w26xs")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_bacj3")
